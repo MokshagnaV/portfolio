@@ -1,0 +1,15 @@
+.nav-bar {
+  background-color: rgba(255, 255, 255, 0.582);
+  backdrop-filter: blur(8px);
+  position: fixed;
+  width: 100vw;
+}
+.menu {
+  margin: 0 20%;
+  padding: 1rem 0;
+  display: flex;
+  justify-content: space-between;
+}
+.menu-link {
+  color: black;
+}
