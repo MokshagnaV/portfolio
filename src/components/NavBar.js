@@ -1,3 +1,4 @@
+import { Link } from "@mui/material";
 import "./navbar.css";
 
 const NavBar = () => {
@@ -6,9 +7,9 @@ const NavBar = () => {
     <div className="nav-bar">
       <div className="menu">
         {pages.map((page, index) => (
-          <a key={index} href={`#${page}`} className="menu-link">
+          <Link key={index} href={`#${page}`} fontSize={20} underline="none">
             {page}
-          </a>
+          </Link>
         ))}
       </div>
     </div>

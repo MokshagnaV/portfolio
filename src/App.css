@@ -1,6 +1,12 @@
 * {
   scroll-behavior: smooth;
+  color: #00180e;
 }
 .section {
   padding: 2rem;
+  padding-top: 3.5rem;
+}
+.section-heading {
+  font-family: "Girassol", cursive;
+  color: #00180e;
 }

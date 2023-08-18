@@ -1,4 +1,5 @@
 import { Box, Chip, Grid, Stack, Typography } from "@mui/material";
+import SectionHeading from "../common/SectionHeading";
 
 const About = () => {
   const educationalDetails = [
@@ -30,10 +31,11 @@ const About = () => {
 
   return (
     <div id="About" className="section">
+      <SectionHeading title="About" />
       <Grid
         container
         paddingX={2}
-        paddingY={10}
+        paddingTop={10}
         spacing={2}
         alignItems="center"
       >
