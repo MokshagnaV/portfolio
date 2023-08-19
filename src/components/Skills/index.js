@@ -6,25 +6,25 @@ const Skills = () => {
     {
       category: "Programming Languages",
       skills: [
-        { name: "Java", iconSrc: "/assets/java.svg" },
-        { name: "Python", iconSrc: "/assets/python.svg" },
-        { name: "JavaScript", iconSrc: "/assets/javascript.svg" },
+        { name: "Java", iconSrc: "./assets/java.svg" },
+        { name: "Python", iconSrc: "./assets/python.svg" },
+        { name: "JavaScript", iconSrc: "./assets/javascript.svg" },
       ],
     },
     {
       category: "Frameworks",
       skills: [
-        { name: "React", iconSrc: "/assets/react.svg" },
-        { name: "Django", iconSrc: "/assets/django.svg" },
+        { name: "React", iconSrc: "./assets/react.svg" },
+        { name: "Django", iconSrc: "./assets/django.svg" },
       ],
     },
     {
       category: "Tools & Libraries",
       skills: [
-        { name: "Material UI", iconSrc: "/assets/material-ui.svg" },
-        { name: "Chakra UI", iconSrc: "/assets/chakra-ui.svg" },
-        { name: "Webpack", iconSrc: "/assets/webpack.svg" },
-        { name: "Visual Studio Code", iconSrc: "/assets/vscode.svg" },
+        { name: "Material UI", iconSrc: "./assets/material-ui.svg" },
+        { name: "Chakra UI", iconSrc: "./assets/chakra-ui.svg" },
+        { name: "Webpack", iconSrc: "./assets/webpack.svg" },
+        { name: "Visual Studio Code", iconSrc: "./assets/vscode.svg" },
       ],
     },
   ];
