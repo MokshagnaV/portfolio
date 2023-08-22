@@ -1,34 +1,8 @@
 import { Box, Chip, Grid, Stack, Typography } from "@mui/material";
 import SectionHeading from "../common/SectionHeading";
+import { educationalDetails } from "../../data";
 
 const About = () => {
-  const educationalDetails = [
-    {
-      period: "2019-23",
-      degree: "Bachelor's Degree (Bachelor of Technology)",
-      major: "Computer Science and Engineer",
-      institute: "Kamala Institute of Technology and Science",
-      scoreType: "CGPA (10) ",
-      score: "7.2",
-    },
-    {
-      period: "2017-19",
-      degree: "Intermediate (12th Grade)",
-      major: "Mathematics Physics Chemistry",
-      institute: "Alphores Junior College",
-      scoreType: "Percentage",
-      score: "95%",
-    },
-    {
-      period: "2016-17",
-      degree: "Secondary Schooling (10th Grade)",
-      major: "Mathematics Science Social",
-      institute: "Rainbow High School",
-      scoreType: "CGPA (10) ",
-      score: "9.7",
-    },
-  ];
-
   return (
     <div id="About" className="section">
       <SectionHeading title="About" />

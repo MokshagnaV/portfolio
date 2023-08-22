@@ -28,7 +28,7 @@ const ProjectCard = ({ projectData }) => {
         >
           <img
             src={projectData.picSrc}
-            alt="ams"
+            alt={projectData.name}
             width="100%"
             height="100%"
             style={{ objectFit: "cover" }}

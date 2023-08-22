@@ -1,34 +1,8 @@
 import { Box, Grid, Stack, Typography } from "@mui/material";
 import SkillLogo from "./SkillLogo";
+import { skillsData } from "../../data";
 
 const Skills = () => {
-  const skillsData = [
-    {
-      category: "Programming Languages",
-      skills: [
-        { name: "Java", iconSrc: "/assets/java.svg" },
-        { name: "Python", iconSrc: "/assets/python.svg" },
-        { name: "JavaScript", iconSrc: "/assets/javascript.svg" },
-      ],
-    },
-    {
-      category: "Frameworks",
-      skills: [
-        { name: "React", iconSrc: "/assets/react.svg" },
-        { name: "Django", iconSrc: "/assets/django.svg" },
-      ],
-    },
-    {
-      category: "Tools & Libraries",
-      skills: [
-        { name: "Material UI", iconSrc: "/assets/material-ui.svg" },
-        { name: "Chakra UI", iconSrc: "/assets/chakra-ui.svg" },
-        { name: "Webpack", iconSrc: "/assets/webpack.svg" },
-        { name: "Visual Studio Code", iconSrc: "/assets/vscode.svg" },
-      ],
-    },
-  ];
-
   return (
     <div className="section" id="Skills">
       <Stack direction="row" alignItems="center">
