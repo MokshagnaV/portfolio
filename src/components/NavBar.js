@@ -40,25 +40,35 @@ const NavBar = () => {
           </IconButton>
         </Box>
         <Drawer open={toggleMenu}>
-          <Box padding={1}>
-            <IconButton onClick={menuClick}>
-              <Icon fontSize="large">
-                <Close fontSize="large" onClick={() => setToggleMenu(false)} />
-              </Icon>
-            </IconButton>
+          <Box className="nav-bar">
+            <Box padding={1}>
+              <IconButton onClick={menuClick}>
+                <Icon fontSize="large">
+                  <Close
+                    fontSize="large"
+                    onClick={() => setToggleMenu(false)}
+                  />
+                </Icon>
+              </IconButton>
+            </Box>
+            <Divider />
+            <List>
+              {pages.map((item, index) => (
+                <Link
+                  key={index}
+                  href={`#${item}`}
+                  underline="none"
+                  onClick={() => setToggleMenu(false)}
+                >
+                  <ListItem>
+                    <ListItemButton>
+                      <ListItemText primary={item} />
+                    </ListItemButton>
+                  </ListItem>
+                </Link>
+              ))}
+            </List>
           </Box>
-          <Divider />
-          <List>
-            {pages.map((item, index) => (
-              <Link key={index} href={`#${item}`} underline="none">
-                <ListItem>
-                  <ListItemButton>
-                    <ListItemText primary={item} />
-                  </ListItemButton>
-                </ListItem>
-              </Link>
-            ))}
-          </List>
         </Drawer>
         <Stack
           justifyContent="center"
@@ -66,14 +76,16 @@ const NavBar = () => {
           padding={1}
           flexGrow={{ xs: 1, md: 0 }}
         >
-          <Typography
-            variant="h3"
-            fontFamily="'Tilt Prism', cursive"
-            left="16px"
-            sx={{ cursor: "pointer" }}
-          >
-            MV
-          </Typography>
+          <Link href="#Home" underline="none">
+            <Typography
+              variant="h3"
+              fontFamily="'Tilt Prism', cursive"
+              left="16px"
+              sx={{ cursor: "pointer" }}
+            >
+              MV
+            </Typography>
+          </Link>
         </Stack>
         <Box display={{ xs: "none", md: "flex" }} flexGrow={1} className="menu">
           {pages.map((page, index) => (
