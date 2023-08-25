@@ -23,6 +23,12 @@ export const projectsData = [
     preview: "https://nike-clone-mokshagnav.vercel.app/",
     code: "https://github.com/MokshagnaV/nike-clone",
   },
+  {
+    name: "Apartment Management System",
+    picSrc: "./assets/ams.png",
+    preview: "",
+    code: "https://github.com/MokshagnaV/AMS",
+  },
 ];
 
 export const skillsData = [

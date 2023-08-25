@@ -6,6 +6,7 @@ import {
   Paper,
   Slide,
   Stack,
+  Tooltip,
   Typography,
 } from "@mui/material";
 import { useState } from "react";
@@ -54,11 +55,29 @@ const ProjectCard = ({ projectData }) => {
                 {projectData.name}
               </Typography>
               <Stack direction="row" justifyContent="space-around">
-                <Link href={projectData.preview} target="_blank">
-                  <Button variant="outlined" sx={{ borderRadius: 5 }}>
-                    Preview
-                  </Button>
-                </Link>
+                {projectData.preview ? (
+                  <Link href={projectData.preview} target="_blank">
+                    <span>
+                      <Button variant="outlined" sx={{ borderRadius: 5 }}>
+                        Preview
+                      </Button>
+                    </span>
+                  </Link>
+                ) : (
+                  <Link href={projectData.preview} target="_blank">
+                    <Tooltip title="Preview not available">
+                      <span>
+                        <Button
+                          variant="outlined"
+                          disabled
+                          sx={{ borderRadius: 5 }}
+                        >
+                          Preview
+                        </Button>
+                      </span>
+                    </Tooltip>
+                  </Link>
+                )}
                 <Link href={projectData.code} target="_blank">
                   <Button variant="outlined" sx={{ borderRadius: 5 }}>
                     Code
