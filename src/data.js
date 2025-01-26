@@ -86,3 +86,11 @@ export const educationalDetails = [
     score: "9.7",
   },
 ];
+
+export const workExperience = [
+  {
+    company: "IBM, India Software Labs, Kochi",
+    role: "Software Developer",
+    description: "As a backend developer at IBM, I specialize in designing, developing, and maintaining connectors for platforms like IBM App Connect, WatsonX Orchestrate (WO), and Event Automation to enable seamless integrations. \n I contributed in developing a feature in IBM App Connect that allows users to build user-defined connectors using GraphQL SDL. I also enhanced Salesforce connectors by implementing new actions. \nTo optimize internal processes, I created a cron job for monitoring Jenkins builds and developed a utility tool that reduces Jenkins job execution time from 1 hour to 5 minutes, improving testing efficiency. Additionally, I contributed to building a React.js and TypeScript-based dashboard to monitor task statuses and improve team planning and workflow management. \nProficient in Node.js, React.js, TypeScript, Jenkins, Docker, and Kubernetes, I focus on streamlining development and delivering robust integration solutions."
+  }
+]
