@@ -1,11 +1,16 @@
 import { Box, Chip, Grid, Stack, Typography } from "@mui/material";
 import SectionHeading from "../common/SectionHeading";
-import { educationalDetails } from "../../data";
+import SideHeading from "../common/SideHeading";
+import { educationalDetails, workExperience } from "../../data";
 
 const About = () => {
   return (
     <div id="About" className="section">
       <SectionHeading title="About" />
+      <Box display="flex" justifyContent="space-around">
+      <SideHeading title="Work Experience" />
+      <SideHeading title="Education Details" />
+      </Box>
       <Grid
         container
         paddingX={2}
@@ -14,12 +19,13 @@ const About = () => {
         alignItems="center"
       >
         <Grid item sm={12} md={6}>
-          <Typography variant="body" fontSize={{ sm: "20px" }}>
-            I am passionate about technology and it's application. Enthusiastic
-            to learn new things. Completed graduation recently, exploring the
-            world of web development. Excelling the frontend and heading towards
-            the full stack development.
-          </Typography>
+          {workExperience.map((experience, index) => (
+            <Box display="flex" flexDirection="column" gap={2} key={index}>
+              <Typography fontSize={18} fontWeight={600} >{experience.company}</Typography>
+              <Typography >{experience.role}</Typography>
+              <Typography >{experience.description}</Typography>
+            </Box>
+          ))}
         </Grid>
         <Grid item sm={12} md={6}>
           {educationalDetails.map((education, index) => (
