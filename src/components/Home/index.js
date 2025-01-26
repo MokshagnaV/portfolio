@@ -26,7 +26,7 @@ const Home = () => {
               fontFamily="'Amatic SC', cursive"
               fontWeight="800"
             >
-              Under Graduate, Frontend Developer
+              Software Developer, IBM ISL, Kochi
             </Typography>
           </Stack>
         </Grid>
